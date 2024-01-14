@@ -1,0 +1,32 @@
+---
+const { name, level, description, isTitle } = Astro.props;
+---
+
+<div class="container">
+  <div class="cols">
+    <span>{name}</span>
+    <span>{level}</span>
+    <span class={!isTitle && "description"}>{description}</span>
+  </div>
+  {isTitle && <hr />}
+</div>
+
+<style>
+  div.container {
+    margin: 0px 60px 5px 30px;
+  }
+
+  .cols {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span {
+    flex: 1;
+    font-size: 16px;
+  }
+
+  span.description {
+    color: gray;
+  }
+</style>

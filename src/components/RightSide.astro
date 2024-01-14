@@ -1,0 +1,83 @@
+---
+import Block from "../components/Block.astro";
+import TechSkill from "./TechSkill.astro";
+import WorkExperience from "./WorkExperience.astro";
+---
+
+<div class="right-side">
+ <h1>
+   López Castillo Rafael Fernando
+ </h1>
+ <h3 class="subtitle">
+   Software Engineer
+ </h3>
+  <Block icon="console-line" title="Tech skills" >
+    <TechSkill name="Name" level="Level" description="Description" isTitle={true}/>
+    <TechSkill name="React" level="Proficient" description="web, native, next.js" />
+    <TechSkill name="Node.js" level="Proficient" description="Express, Hono" />
+    <TechSkill name="Php" level="Intermediate" description="Some frameworks" />
+    <TechSkill name="Mysql" level="Intermediate" description="" />
+    <TechSkill name="Mongodb" level="Intermediate" description="" />
+    <TechSkill name="Python" level="Basics" description="Scripting and cli" />
+  </Block>
+  <Block icon="briefcase" title="Work experience" >
+    <WorkExperience 
+      company="3Pillar Global" 
+      title="Sr Software Engineer" 
+      dates="Jun 22 - Jan 24" 
+      subtitle="React, React native, vue" >
+        <ul class="gray">
+          <li>I contributed with the release of an MVP and the next versions. <br />
+          Creating, testing and fixing components, migrating from vanilla JS to TS</li>  
+          <li>Using: Typescript, React, Redux, Zustant, React Testing Library</li>  
+          <li>Agile, AzureDevops, git</li>
+        </ul>  
+    </WorkExperience>
+    <WorkExperience
+      company="Wizeline"
+      title="Software Engineer"
+      subtitle="React, Ruby on Rails"
+      dates="Nov 21 - May 22"
+    >
+      <ul class="gray">
+        <li>I contributed on an internal project creating, testing, fixing and refactoring components.</li>
+        <li>Using: React with redux on the frontend and Ruby on Rails on the backend</li>
+        <li>Agile, github project, git </li>
+      </ul>
+    </WorkExperience>
+    <WorkExperience
+    company="Interlogic"
+    title="PHP developer"
+    subtitle="PHP, Jquery, Mysql, Python"
+    dates="Apr 19 - Nov 21"
+    >
+    <ul class="gray">
+      <li>I was responsible for three different web applications, maintaing, developing new features, tesing and integrating to production</li>
+      <li>
+        Using: PHP homemade framework for API and services, PHP Yii2 framework for mvc and vanilla JS and Jquery
+      </li>
+      <li>
+        Agile, Jira, Git, AWS EC2, AWS lamda  
+      </li>
+    </ul>
+    </WorkExperience>
+    <WorkExperience company="Previous jobs" title="Web developer " dates="2017 - 2019"/>
+  </Block>
+</div>
+
+
+<style>
+  div.right-side {
+    background-color: white;
+  }
+  div {
+   width: 100%;
+   flex: 1
+   display: flex;
+  }
+
+  h1 {
+   text-align: center;
+  }
+
+ </style>

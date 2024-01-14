@@ -1,0 +1,49 @@
+---
+const { company, title, subtitle, dates } = Astro.props;
+---
+
+<div class="container">
+  <hr />
+  <div class="header">
+    <span class="subtitle">{company}</span>
+    <span class="title">{title}</span>
+    <span class="gray">{dates}</span>
+  </div>
+  <span class="techs gray">{subtitle}</span>
+  <div class="children">
+    <slot />
+  </div>
+</div>
+
+<style>
+  div.container {
+    margin: 0 60px 25px 30px;
+  }
+
+  span.title {
+    font-size: 16px;
+  }
+  span.subtitle {
+    font-size: 18px;
+  }
+
+  div.header {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  div.header span:nth-child(2) {
+    flex: 1;
+    text-align: center;
+  }
+
+  .techs {
+    font-size: 12px;
+  }
+
+  .children {
+    font-size: 14px;
+  }
+</style>

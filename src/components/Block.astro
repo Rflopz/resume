@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { icon, title } = Astro.props;
+---
+
+<div class="container">
+  <div class="title">
+    <Icon class="icon" name={`mdi:${icon}`} size={36} />
+    <h3>{title}</h3>
+  </div>
+  <div class="child">
+    <slot />
+  </div>
+</div>
+
+<style>
+  div.container {
+    padding-left: 10px;
+    margin-top: 22px;
+  }
+
+  div.title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  div.child {
+    margin-left: 15px;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+</style>

@@ -1,0 +1,25 @@
+---
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import LeftSide from "../components/LeftSide.astro";
+import RightSide from "../components/RightSide.astro";
+---
+
+<DefaultLayout title="Rafael Lopez - Software Engineer">
+  <main>
+    <LeftSide />
+    <RightSide />
+  </main>
+</DefaultLayout>
+
+<style>
+  main {
+    max-width: 900px;
+    display: flex;
+    border: 1px solid lightgray;
+    margin: auto;
+  }
+
+  body {
+    background-color: lightslategray;
+  }
+</style>
