@@ -15,9 +15,11 @@ import WorkExperience from "./WorkExperience.astro";
     <TechSkill name="Name" level="Level" description="Description" isTitle={true}/>
     <TechSkill name="React" level="Proficient" description="web, native, next.js" />
     <TechSkill name="Node.js" level="Proficient" description="Express, Hono" />
-    <TechSkill name="Php" level="Intermediate" description="Some frameworks" />
+    <TechSkill name="Git" level="Proficient" description="" />
+    <TechSkill name="Php" level="Intermediate" description="Codeigniter, Laravel" />
     <TechSkill name="Mysql" level="Intermediate" description="" />
     <TechSkill name="Mongodb" level="Intermediate" description="" />
+    <TechSkill name="C#" level="Intermediate" description="Asp.net 4x" />
     <TechSkill name="Python" level="Basics" description="Scripting and cli" />
   </Block>
   <Block icon="briefcase" title="Work experience" >
@@ -61,7 +63,7 @@ import WorkExperience from "./WorkExperience.astro";
       </li>
     </ul>
     </WorkExperience>
-    <WorkExperience company="Previous jobs" title="Web developer " dates="2017 - 2019"/>
+    <WorkExperience company="Previous jobs" title="Web developer " subtitle="C#, PHP, Jquery, MVC" dates="2017 - 2019"/>
   </Block>
 </div>
 
@@ -78,6 +80,11 @@ import WorkExperience from "./WorkExperience.astro";
 
   h1 {
    text-align: center;
+   margin-bottom: 0;
+  }
+
+  h3 {
+    margin: 5px;
   }
 
  </style>
