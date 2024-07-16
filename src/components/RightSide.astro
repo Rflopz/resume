@@ -14,15 +14,28 @@ import WorkExperience from "./WorkExperience.astro";
   <Block icon="console-line" title="Tech skills" >
     <TechSkill name="Name" level="Level" description="Description" isTitle={true}/>
     <TechSkill name="React" level="Proficient" description="web, native, next.js" />
+    <TechSkill name="Vue" level="Proficient" description="web" />
     <TechSkill name="Node.js" level="Proficient" description="Express, Hono" />
     <TechSkill name="Git" level="Proficient" description="" />
     <TechSkill name="Php" level="Intermediate" description="Codeigniter, Laravel" />
     <TechSkill name="Mysql" level="Intermediate" description="" />
     <TechSkill name="Mongodb" level="Intermediate" description="" />
-    <TechSkill name="C#" level="Intermediate" description="Asp.net 4x" />
-    <TechSkill name="Python" level="Basics" description="Scripting and cli" />
+    <!-- <TechSkill name="C#" level="Intermediate" description="Asp.net 4x" /> -->
+    <!-- <TechSkill name="Python" level="Basics" description="Scripting and cli" /> -->
   </Block>
   <Block icon="briefcase" title="Work experience" >
+    <WorkExperience
+        company="Xipe Technology"
+        title="Sr Frontend Engineer"
+        dates="Mar 24 - Current"
+        subtitle="Vue, NodeJS">
+          <ul class="gray">
+            <li>Development and release of new features, solving bugs and optimizations</li>  
+            <li>Using: Vue 2, Vuex, Vuetify 2, NodeJS, Next.js</li>
+            <li>Agile, Jira, git</li>
+          </ul>
+    </WorkExperience>
+
     <WorkExperience 
       company="3Pillar Global" 
       title="Sr Software Engineer" 
@@ -47,23 +60,7 @@ import WorkExperience from "./WorkExperience.astro";
         <li>Agile, github project, git </li>
       </ul>
     </WorkExperience>
-    <WorkExperience
-    company="Interlogic"
-    title="PHP developer"
-    subtitle="PHP, Jquery, Mysql, Python"
-    dates="Apr 19 - Nov 21"
-    >
-    <ul class="gray">
-      <li>I was responsible for three different web applications, maintaing, developing new features, tesing and integrating to production</li>
-      <li>
-        Using: PHP homemade framework for API and services, PHP Yii2 framework for mvc and vanilla JS and Jquery
-      </li>
-      <li>
-        Agile, Jira, Git, AWS EC2, AWS lamda  
-      </li>
-    </ul>
-    </WorkExperience>
-    <WorkExperience company="Previous jobs" title="Web developer " subtitle="C#, PHP, Jquery, MVC" dates="2017 - 2019"/>
+    <WorkExperience company="Previous jobs" title="Web developer " subtitle="C#, PHP, Jquery, MVC" dates="2017 - 2021"/>
   </Block>
 </div>
 
